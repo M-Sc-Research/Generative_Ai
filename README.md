@@ -13,4 +13,6 @@
 
 large language model are built by using supervised learning to repeatedly predict the next word.
 <br>
-LLMs not just predict the next word, but actually learn to follow instructions and also be safe in what it outputs.
+LLMs not just predict the next word, but actually learn to follow instructions and also be safe in what it outputs.<br>
+But at the heart of LLMs is this technology that's learned from a lot of data to predict what is the next word. That's how large language models work;
+**they're trained to repeatedly predict the next word.**
