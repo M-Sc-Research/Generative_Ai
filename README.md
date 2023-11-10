@@ -19,3 +19,6 @@ But at the heart of LLMs is this technology that's learned from a lot of data to
 
 <br>
 LLMs are giving a new way to find information
+<br>
+LLM can sometimes make facts up. We call this hallucination.
+<br>
