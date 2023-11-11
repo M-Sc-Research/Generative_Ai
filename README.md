@@ -24,3 +24,15 @@ LLM can sometimes make facts up. We call this hallucination.
 <br>
 
 AI is a general-purpose technology. 
+<br>
+ex of tasks LLMs can carry out:
+1. writting
+2. reading => looking at a relatively long piece of text
+3. chatting
+
+<br>
+two differnt types of LLM-based application
+    - web interface-based application
+    - software-based application
+
+
