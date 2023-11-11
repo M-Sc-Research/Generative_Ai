@@ -31,9 +31,10 @@ ex of tasks LLMs can carry out:
 3. chatting
 
 <br>
-two differnt types of LLM-based application
-    - web interface-based application
-    - software-based application
+two differnt types of LLM-based application:<br>
+
+    -web interface-based application
+    -software-based application
 
 
 ![wi vs sa](3.png)
