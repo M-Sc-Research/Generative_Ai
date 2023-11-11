@@ -36,3 +36,4 @@ two differnt types of LLM-based application
     - software-based application
 
 
+![wi vs sa](3.png)
