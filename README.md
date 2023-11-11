@@ -22,3 +22,5 @@ LLMs are giving a new way to find information
 <br>
 LLM can sometimes make facts up. We call this hallucination.
 <br>
+
+AI is a general-purpose technology. 
