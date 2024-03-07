@@ -7,7 +7,9 @@ Large language models have been trained on trillions of words over many weeks an
 The more parameters a model has, the more memory, and as it turns out, the more sophisticated the tasks it can perform. By either using these models as they are or by applying fine-tuning techniques to adapt them to your specific use case, you can rapidly build customized solutions without the need to train a new model from scratch.<br>
 The way you interact with language models is quite different than other machine learning and programming paradigms. In those cases, you write computer code with formalized syntax to interact with libraries and APIs.
 <br>
-In contrast, large language models can take natural language or human written instructions and perform tasks much as a human would. The text that you pass to an LLM is known as a **prompt**. 
+
+> In contrast, large language models can take natural language or human written instructions and perform tasks much as a human would. The text that you pass to an LLM is known as a **prompt**.
+
 <br>
 The space or memory that is available to the prompt is called the context window, and this is typically large enough for a few thousand words but differs from model to model.
 <br>
