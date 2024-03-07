@@ -128,3 +128,12 @@ example: translate
 
 ![Screenshot from 2024-03-08 02-30-07](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/fb8fa72e-01da-4dd9-bf6f-45e49bf525eb)
 
+transformer:
+![Screenshot from 2024-03-08 02-32-54](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/8e6ed441-a729-4c5b-bb53-ed75a9242751)
+
+<br>
+
+![Screenshot from 2024-03-08 02-35-09](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/956e1aae-5893-4648-88bc-3937de3229ed)
+
+
+
