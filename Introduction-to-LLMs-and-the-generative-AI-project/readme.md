@@ -135,5 +135,8 @@ transformer:
 
 ![Screenshot from 2024-03-08 02-35-09](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/956e1aae-5893-4648-88bc-3937de3229ed)
 
+<br>
 
+The Transformer model uses self-attention to compute representations of input sequences, which allows it to capture long-term dependencies and parallelize computation effectively.
+<br>
 
