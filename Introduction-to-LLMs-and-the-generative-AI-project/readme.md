@@ -43,7 +43,10 @@ In this example, you ask the model to determine where Ganymede is located in the
 It's important to note that generative algorithms are not new. Previous generations of language models made use of an architecture called **recurrent neural networks** or RNNs. RNNs while powerful for their time, were limited by the amount of compute and memory needed to perform well at generative tasks.
 </p>
 
-Let's look at an example of an RNN carrying out a simple next-word prediction generative task. With just one previous word seen by the model, the prediction can't be very good. As you scale the RNN implementation to be able to see more of the preceding words in the text, you have to significantly scale the resources that the model uses.
+example of an RNN:
+- carrying out a simple next-word prediction generative task
+-  With just one previous word seen by the model, the prediction can't be very good.
+-   As you scale the RNN implementation to be able to see more of the preceding words in the text, you have to significantly scale the resources that the model uses.
 <br>
 
 As for the prediction, well, the model failed here. Even though you scale the model, it still hasn't seen enough of the input to make a good prediction. To successfully predict the next word, models need to see more than just the previous few words. Models need to have an understanding of the whole sentence or even the whole document. The problem here is that language is complex. In many languages, one word can have multiple meanings. These are homonyms. In this case, it's only with the context of the sentence that we can see what kind of bank is meant. Words within a sentence structure can be ambiguous or have what we might call syntactic ambiguity. Take for example this sentence, "The teacher taught the students with the book." Did the teacher teach using the book or did the student have the book, or was it both? How can an algorithm make sense of human language if sometimes we can't?
