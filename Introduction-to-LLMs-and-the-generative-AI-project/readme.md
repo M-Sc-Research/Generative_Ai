@@ -142,5 +142,5 @@ The Transformer model uses self-attention to compute representations of input se
 
 <strong>
 The Transformer architecture consists of an encoder and a decoder, each of which is composed of several layers. Each layer consists of two sub-layers: a multi-head self-attention mechanism and a feed-forward neural network. The multi-head self-attention mechanism allows the model to attend to different parts of the input sequence, while the feed-forward network applies a point-wise fully connected layer to each position separately and identically. 
-
+The Transformer model also uses residual connections and layer normalization to facilitate training and prevent overfitting.
 </strong>
