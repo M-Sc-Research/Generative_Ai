@@ -21,9 +21,17 @@ In this example, you ask the model to determine where Ganymede is located in the
 
 > The completion is comprised of the text contained in the original prompt, followed by the generated text. You can see that this model did a good job of answering your question. It correctly **identifies** that Ganymede is a moon of Jupiter and generates a reasonable answer to your question stating that the moon is located within Jupiter's orbit.
 <br>
- You can use LLMs to carry out smaller, focused tasks like **information retrieval**. In this example, you ask the model to identify all of the people and places identified in a news article. This is known as named entity recognition, a word classification. 
+
+ You can use LLMs to carry out smaller, focused tasks like **information retrieval**. In this example, you ask the model to identify all of the people and places identified in a news article. This is known as named entity recognition, a word classification.
+
  <br>
-  The understanding of knowledge encoded in the model's parameters allows it to correctly carry out this task and return the requested information to you. Finally, an area of active development is augmenting LLMs by connecting them to external data sources or using them to invoke external APIs. You can use this ability to provide the model with information it doesn't know from its pre-training and to enable your model to power interactions with the real world.
+ <br>
+ 
+  The understanding of knowledge encoded in the model's parameters allows it:
+  1. to correctly carry out this task
+  2. return the requested information
+  3.  Finally, an area of active development is augmenting LLMs by connecting them to external data sources or using them to invoke external APIs.
+  4.   You can use this ability to provide the model with information it doesn't know from its pre-training and to enable your model to power interactions with the real world.
   <br>
   Developers have discovered that as the scale of foundation models grows from hundreds of millions of parameters to billions, even hundreds of billions, the subjective understanding of language that a model possesses also increases. This language understanding stored within the parameters of the model is what processes, reasons, and ultimately solves the tasks you give it, but it's also true that smaller models can be fine-tuned to perform well on specific focused tasks.
  <br>
