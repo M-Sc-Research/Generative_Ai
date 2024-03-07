@@ -49,11 +49,23 @@ example of an RNN:
 -   As you scale the RNN implementation to be able to see more of the preceding words in the text, you have to significantly scale the resources that the model uses.
 <br>
 
-As for the prediction, well, the model failed here. Even though you scale the model, it still hasn't seen enough of the input to make a good prediction. To successfully predict the next word, models need to see more than just the previous few words. Models need to have an understanding of the whole sentence or even the whole document. The problem here is that language is complex. In many languages, one word can have multiple meanings. These are homonyms. In this case, it's only with the context of the sentence that we can see what kind of bank is meant. Words within a sentence structure can be ambiguous or have what we might call syntactic ambiguity. Take for example this sentence, "The teacher taught the students with the book." Did the teacher teach using the book or did the student have the book, or was it both? How can an algorithm make sense of human language if sometimes we can't?
-transformers can be scaled efficiently to use multi-core GPUs, it can parallel process input data, making use of much larger training datasets, and crucially, it's able to learn to pay attention to the meaning of the words it's processing. And attention is all you need. It's in the title.
+- As for the prediction, the model failed here. Even though you scale the model, it still hasn't seen enough of the input to make a good prediction.
+-  To successfully predict the next word, models need to see more than just the previous few words.
+- Models need to have an understanding of the whole sentence or even the whole document.
+-  The problem here is that language is complex.
+-   In many languages, one word can have multiple meanings. These are homonyms.
+
+> Transformers:
+
+- can be scaled efficiently to use multi-core GPUs
+-  it can parallel process input data
+-   making use of much larger training datasets
+-    it's able to learn to pay attention to the meaning of the words it's processing. And attention is all you need. 
 
 
 <br>
-The Transformer model uses self-attention to compute representations of input sequences, which allows it to capture long-term dependencies and parallelize computation effectively. The authors demonstrate that their model achieves state-of-the-art performance on several machine translation tasks and outperforms previous models that rely on RNNs or CNNs.
+
+1. The Transformer model uses self-attention to compute representations of input sequences, which allows it to capture long-term dependencies and parallelize computation effectively.
+2.  The authors demonstrate that their model achieves state-of-the-art performance on several machine translation tasks and outperforms previous models that rely on RNNs or CNNs.
 
 			
