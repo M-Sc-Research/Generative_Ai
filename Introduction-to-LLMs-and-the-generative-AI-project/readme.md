@@ -7,9 +7,15 @@ Large language models have been trained on trillions of words over many weeks an
 The more parameters a model has, the more memory, and as it turns out, the more sophisticated the tasks it can perform. By either using these models as they are or by applying fine-tuning techniques to adapt them to your specific use case, you can rapidly build customized solutions without the need to train a new model from scratch.<br>
 The way you interact with language models is quite different than other machine learning and programming paradigms. In those cases, you write computer code with formalized syntax to interact with libraries and APIs.
 <br>
-In contrast, large language models can take natural language or human written instructions and perform tasks much as a human would. The text that you pass to an LLM is known as a prompt. 
+In contrast, large language models can take natural language or human written instructions and perform tasks much as a human would. The text that you pass to an LLM is known as a **prompt**. 
 <br>
-The space or memory that is available to the prompt is called the context window, and this is typically large enough for a few thousand words but differs from model to model. In this example, you ask the model to determine where Ganymede is located in the solar system. The prompt is passed to the model, the model then predicts the next words, and because your prompt contained a question, this model generates an answer. The output of the model is called a completion, and the act of using the model to generate text is known as inference. The completion is comprised of the text contained in the original prompt, followed by the generated text. You can see that this model did a good job of answering your question. It correctly identifies that Ganymede is a moon of Jupiter and generates a reasonable answer to your question stating that the moon is located within Jupiter's orbit.
+The space or memory that is available to the prompt is called the context window, and this is typically large enough for a few thousand words but differs from model to model.
+<br>
+In this example, you ask the model to determine where Ganymede is located in the solar system. The prompt is passed to the model, the model then predicts the next words, and because your prompt contained a question, this model generates an answer. The output of the model is called a **completion**, and the act of using the model to generate text is known as **inference**.
+<br>
+<br>
+
+The completion is comprised of the text contained in the original prompt, followed by the generated text. You can see that this model did a good job of answering your question. It correctly identifies that Ganymede is a moon of Jupiter and generates a reasonable answer to your question stating that the moon is located within Jupiter's orbit.
 <br>
  You can use LLMs to carry out smaller, focused tasks like information retrieval. In this example, you ask the model to identify all of the people and places identified in a news article. This is known as named entity recognition, a word classification. 
  <br>
