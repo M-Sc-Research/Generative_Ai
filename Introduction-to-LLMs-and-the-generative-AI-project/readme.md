@@ -124,4 +124,7 @@ The transformer architecture is split into two distinct parts:
 
 <br>
 
+example: translate
+
+![Screenshot from 2024-03-08 02-30-07](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/fb8fa72e-01da-4dd9-bf6f-45e49bf525eb)
 
