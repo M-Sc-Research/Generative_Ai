@@ -257,3 +257,17 @@ One more parameter that you can use to control the randomness of the model outpu
 This parameter influences the shape of the probability distribution that the model calculates for the next token. Broadly speaking, the higher the temperature, the higher the randomness, and the lower the temperature, the lower the randomness. 
 
 <br>
+
+
+In contrast to the top k and top p parameters, changing the temperature alters the predictions that the model will make. If you choose a low value of temperature, say less than one, the resulting probability distribution from the softmax layer is more strongly peaked with the probability being concentrated in a smaller number of words.
+
+<br><br>
+If instead you set the temperature to a higher value, say, greater than one, then the model will calculate a broader flatter probability distribution for the next token.
+<br>
+
+> This leads the model to generate text with a higher degree of randomness and more variability in the output compared to a cool temperature setting. This can help you generate text that sounds more creative. If you leave the temperature value equal to one, this will leave the softmax function as default and the unaltered probability distribution will be used.
+<br><br>
+
+**Temperature is used to affect the randomness of the output of the softmax layer. A lower temperature results in reduced variability while a higher temperature results in increased randomness of the output.**
+
+![Screenshot from 2024-03-09 01-28-30](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/683005ea-8868-49f8-9f63-2727c44c7da2)
