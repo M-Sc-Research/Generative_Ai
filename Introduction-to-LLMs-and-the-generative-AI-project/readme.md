@@ -222,4 +222,10 @@ Overall, one-shot inference is a desirable trait in machine learning models as i
   As larger and larger models have been trained, it's become clear that the ability of models to perform multiple tasks and how well they perform those tasks depends strongly on the scale of the model.
   <br>
   
-   > models with more parameters can capture more understanding of language. The largest models are surprisingly good at zero-shot inference and can infer and complete many tasks that they were not specifically trained to perform. In contrast, smaller models are generally only good at a small number of tasks. Typically, those similar to the task they were trained on. You may have to try out a few models to find the right one for your use case. Once you've found the model that is working for you, there are a few settings that you can experiment with to influence the structure and style of the completions that the model generates.
+   > Models with more parameters can capture more understanding of language. The largest models are surprisingly good at zero-shot inference and can infer and complete many tasks that they were not specifically trained to perform. In contrast, smaller models are generally only good at a small number of tasks. Typically, those similar to the task they were trained on. You may have to try out a few models to find the right one for your use case. Once you've found the model that is working for you, there are a few settings that you can experiment with to influence the structure and style of the completions that the model generates.
+
+<br><br>
+
+### Greedy vs. random sampling
+
+Most large language models by default will operate with so-called **greedy decoding**. This is the simplest form of next-word prediction, where the model will always choose the word with the highest probability. This method can work very well for short generations but is susceptible to repeated words or repeated sequences of words. If you want to generate text that's more natural, more creative, and avoids repeating words, you need to use some other controls. **Random sampling** is the easiest way to introduce some variability. Instead of selecting the most probable word every time with random sampling, the model chooses an output word at random using the probability distribution to weight the selection.
