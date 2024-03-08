@@ -249,3 +249,11 @@ Most large language models by default will operate with so-called **greedy decod
 
 ![Screenshot from 2024-03-09 00-00-02](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/f620692f-52ae-4edb-a98a-100b6d7a2080)
 
+
+<br><br>
+
+#### temperature:
+One more parameter that you can use to control the randomness of the model output is known as temperature. <br>
+This parameter influences the shape of the probability distribution that the model calculates for the next token. Broadly speaking, the higher the temperature, the higher the randomness, and the lower the temperature, the lower the randomness. 
+
+<br>
