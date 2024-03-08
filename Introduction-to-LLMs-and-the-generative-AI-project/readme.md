@@ -237,3 +237,15 @@ Most large language models by default will operate with so-called **greedy decod
 
 
 ![Screenshot from 2024-03-08 23-53-42](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/4a9320f5-22b1-45da-bc09-355273f923d5)
+
+
+<br><br>
+
+## Two Settings, top p, and top k are sampling techniques that we can use to help limit the random sampling:
+
+![Screenshot from 2024-03-08 23-59-02](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/2b7c706f-9f08-456e-9a24-c23669a42ee5)
+
+<br>
+
+![Screenshot from 2024-03-09 00-00-02](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/f620692f-52ae-4edb-a98a-100b6d7a2080)
+
