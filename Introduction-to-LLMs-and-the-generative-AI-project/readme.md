@@ -302,6 +302,7 @@ If instead you set the temperature to a higher value, say, greater than one, the
  -  As a result of this data quality curation, often only 1-3% of tokens are used for pre-training. (You should consider this when you estimate how much data you need to collect if you decide to pre-train your model.)
 
 
+![Screenshot from 2024-03-09 02-57-56](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/33727850-ab81-4cb9-8331-7556cb8817f8)
 
 
 
