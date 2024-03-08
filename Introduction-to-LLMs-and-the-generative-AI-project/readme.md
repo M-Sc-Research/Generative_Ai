@@ -271,3 +271,9 @@ If instead you set the temperature to a higher value, say, greater than one, the
 **Temperature is used to affect the randomness of the output of the softmax layer. A lower temperature results in reduced variability while a higher temperature results in increased randomness of the output.**
 
 ![Screenshot from 2024-03-09 01-28-30](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/683005ea-8868-49f8-9f63-2727c44c7da2)
+
+
+
+<br><br>
+
+ - LLMs are capable of carrying out many tasks, but their abilities depend strongly on the size and architecture of the model. 
