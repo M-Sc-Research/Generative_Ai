@@ -229,3 +229,9 @@ Overall, one-shot inference is a desirable trait in machine learning models as i
 ### Greedy vs. random sampling
 
 Most large language models by default will operate with so-called **greedy decoding**. This is the simplest form of next-word prediction, where the model will always choose the word with the highest probability. This method can work very well for short generations but is susceptible to repeated words or repeated sequences of words. If you want to generate text that's more natural, more creative, and avoids repeating words, you need to use some other controls. **Random sampling** is the easiest way to introduce some variability. Instead of selecting the most probable word every time with random sampling, the model chooses an output word at random using the probability distribution to weight the selection.
+
+<br>
+![Screenshot from 2024-03-08 23-53-42](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/67ca2e10-412a-4bbf-b748-a5fbef9155a8)
+
+
+
