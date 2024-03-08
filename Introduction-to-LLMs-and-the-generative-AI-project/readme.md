@@ -193,8 +193,30 @@ Zero-shot inference is a powerful capability of LLMs as it allows them to adapt 
 The largest of the LLMs are surprisingly good at this, grasping the task to be completed and returning a good answer. <br>
 Smaller models, on the other hand, can struggle with this.<br>
 
+#### one-shot inference
 
+One-shot inference refers to the ability of a model to make accurate predictions or classifications based on a single input or a small number of examples. In other words, the model can generalize well and make reliable decisions without requiring a large amount of training data.
+<br><br>
+
+Achieving one-shot inference typically requires the model to have strong generalization abilities, robust feature representation, and effective learning mechanisms. Techniques such as transfer learning, few-shot learning, and meta-learning can help improve a model's one-shot inference performance by leveraging information from related tasks or domains.
+<br><br>
+Overall, one-shot inference is a desirable trait in machine learning models as it enables efficient and accurate decision-making with minimal data requirements.
+ <br><br>
+
+ #### few-shot inference
  
  Sometimes a single example won't be enough for the model to learn what you want it to do. So you can extend the idea of giving a single example to include multiple examples. This is known as few-shot inference. 
+ <br><br>
  
- Here, you're working with an even smaller model that failed to carry out good sentiment analysis with one-shot inference. Instead, you're going to try few-shot inference by including a second example. This time, a negative review, including a mix of examples with different output classes can help the model to understand what it needs to do. You pass the new prompts to the model. And this time it understands the instruction and generates a completion that correctly identifies the sentiment of the review as negative. So to recap, you can engineer your prompts to encourage the model to learn by examples. While the largest models are good at zero-shot inference with no examples, smaller models can benefit from one-shot or few-shot inference that include examples of the desired behavior. But remember the context window because you have a limit on the amount of in-context learning that you can pass into the model. Generally, if you find that your model isn't performing well when, say, including five or six examples, you should try fine-tuning your model instead. Fine-tuning performs additional training on the model using new data to make it more capable of the task you want it to perform. You'll explore fine-tuning in detail in week 2 of this course. As larger and larger models have been trained, it's become clear that the ability of models to perform multiple tasks and how well they perform those tasks depends strongly on the scale of the model. As you heard earlier in the lesson, models with more parameters are able to capture more understanding of language. The largest models are surprisingly good at zero-shot inference and are able to infer and successfully complete many tasks that they were not specifically trained to perform. In contrast, smaller models are generally only good at a small number of tasks. Typically, those that are similar to the task that they were trained on. You may have to try out a few models to find the right one for your use case. Once you've found the model that is working for you, there are a few settings that you can experiment with to influence the structure and style of the completions that the model generates.
+  So to recap, you can engineer your prompts to encourage the model to learn by example. While the largest models are good at zero-shot inference with no examples, smaller models can benefit from one-shot or few-shot inference that includes examples of the desired behavior. But remember the context window because you have a limit on the amount of in-context learning that you can pass into the model.
+  <br><br>
+  
+  Generally, if you find that your model isn't performing well when, say, including five or six examples, you should try fine-tuning your model instead. 
+ <br><br> 
+  Fine-tuning performs additional training on the model using new data to make it more capable of the task you want it to perform.
+  <br><br>
+  
+  As larger and larger models have been trained, it's become clear that the ability of models to perform multiple tasks and how well they perform those tasks depends strongly on the scale of the model.
+  <br>
+  
+   > models with more parameters can capture more understanding of language. The largest models are surprisingly good at zero-shot inference and can infer and complete many tasks that they were not specifically trained to perform. In contrast, smaller models are generally only good at a small number of tasks. Typically, those similar to the task they were trained on. You may have to try out a few models to find the right one for your use case. Once you've found the model that is working for you, there are a few settings that you can experiment with to influence the structure and style of the completions that the model generates.
