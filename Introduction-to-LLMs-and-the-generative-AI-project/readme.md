@@ -383,7 +383,8 @@ is a collection of libraries and tools developed for Nvidia GPUs. Libraries such
 
 2. You'll encounter these out-of-memory issues because most LLMs are huge, and require a ton of memory to store and train all of their parameters.
 <br>
-  ![Screenshot from 2024-03-09 18-13-18](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/d75a7d2d-d757-4255-a67d-f69e3530d155)
+
+![Screenshot from 2024-03-09 18-13-18](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/d75a7d2d-d757-4255-a67d-f69e3530d155)
 
 <br>
 
