@@ -394,4 +394,9 @@ is a collection of libraries and tools developed for Nvidia GPUs. Libraries such
 
 <br><br>
 
-4. This can easily lead to 20 extra bytes of memory per model parameter. In fact, to account for all of these overhead during training, you'll actually require approximately 6 times the amount of GPU RAM that the model weights alone take up. To train a one billion parameter model at 32-bit full precision, you'll need approximately 24 gigabyte of GPU RAM. This is definitely too large for consumer hardware, and even challenging for hardware used in data centers, if you want to train with a single processor.
+4. This can easily lead to 20 extra bytes of memory per model parameter. To account for all of these overheads during training, you'll require approximately 6 times the amount of GPU RAM that the model weights alone take up. To train a one billion parameter model at 32-bit full precision, you'll need approximately 24 gigabytes of GPU RAM. This is too large for consumer hardware, and even challenging for hardware used in data centers if you want to train with a single processor.
+
+
+### Reduce the memory required for training
+
+1. quantization
