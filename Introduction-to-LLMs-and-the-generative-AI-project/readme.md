@@ -364,3 +364,33 @@ Here, the training objective is to predict the next token based on the previous 
 ![Screenshot from 2024-03-09 03-41-45](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/c44cebd7-0f46-42fb-972c-4a6d29f99333)
 
 **Researchers have found that the larger a model, the more likely it is to work as you needed to without additional in-context learning or further training.**
+
+
+
+
+<br>
+<br>
+<br>
+
+### Computational challenges of training LLMs
+
+1. running out of memory
+
+  
+#### CUDA(Compute Unified Device Architecture)
+is a collection of libraries and tools developed for Nvidia GPUs. Libraries such as PyTorch and TensorFlow use CUDA to boost performance on metrics multiplication and other operations common to deep learning.
+
+
+2. You'll encounter these out-of-memory issues because most LLMs are huge, and require a ton of memory to store and train all of their parameters.
+<br>
+  ![Screenshot from 2024-03-09 18-13-18](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/d75a7d2d-d757-4255-a67d-f69e3530d155)
+
+<br>
+
+3. If you want to train the model, you'll have to plan for additional components that use GPU memory during training.
+
+![Screenshot from 2024-03-09 18-16-34](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/aba70ecb-4899-4461-b2a1-6b276b78a3d1)
+
+<br><br>
+
+4. This can easily lead to 20 extra bytes of memory per model parameter. In fact, to account for all of these overhead during training, you'll actually require approximately 6 times the amount of GPU RAM that the model weights alone take up. To train a one billion parameter model at 32-bit full precision, you'll need approximately 24 gigabyte of GPU RAM. This is definitely too large for consumer hardware, and even challenging for hardware used in data centers, if you want to train with a single processor.
