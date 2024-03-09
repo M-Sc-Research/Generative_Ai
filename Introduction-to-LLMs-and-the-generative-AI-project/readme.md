@@ -399,4 +399,34 @@ is a collection of libraries and tools developed for Nvidia GPUs. Libraries such
 
 ### Reduce the memory required for training
 
-1. quantization
+1. Quantization
+
+> Reduce the memory required to store the weights of your model by reducing their precision from 32-bit floating point numbers to 16-bit floating point numbers, or eight-bit integer numbers. 
+
+data types used in deep learning framework:
+1.  FP32 for 32-bit full position: The range of numbers you can represent with FP32 goes from approximately -3*10^38 to 3*10^38. By default, model weights, activations, and other model parameters are stored in FP32. 
+<br>
+<br>
+
+![Screenshot from 2024-03-09 18-47-03](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/97f399d3-401e-40e2-91c8-6055b556eca5)
+
+2.  FP16, or Bfloat16 for 16-bit half precision
+3.  int8 eight-bit integers
+   
+**Quantization statistically projects the original 32-bit floating point numbers into a lower precision space, using scaling factors calculated based on the range of the original 32-bit floating point numbers.**
+
+FP32: Floating point numbers are stored as a series of bits zeros and ones. The 32 bits to store numbers in full precision with FP32 consist of one bit for the sign where zero indicates a positive number and one for a negative number. Then eight bits for the exponent of the number, and 23 bits represent the fraction of the number.
+
+
+## FP32 to FP16
+
+![Screenshot from 2024-03-09 18-53-39](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/6c965a8d-5ea4-440f-bb13-035f192509ee)
+
+
+## FP32 to BFLOAT16(Brain Floating Point Format)
+
+![Screenshot from 2024-03-09 18-56-59](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/b9daf7de-799d-40b3-9da9-f00ac95b73de)
+
+## FP32 into INT8
+
+![Screenshot from 2024-03-09 18-59-21](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/9a95f163-5ac3-48d2-9e3b-a3518a6fb6e8)
