@@ -311,14 +311,15 @@ If instead you set the temperature to a higher value, say, greater than one, the
  ## Three variances of the transformer model;
  1. encoder-only
  2. encoder-decoder models
- 3. decode-only
+ 3. decoder-only
 
  <br>
  
  ### Encoder-only (Autoencoding models)
- - they are pre-trained using masked language modeling.
+ - they are pre-trained using masked language modeling.<br>
  Here, tokens in the input sequence or randomly masked, and the training objective is to predict the mask tokens to reconstruct the original sentence. 
- This is also called a **denoising objective**.
+ This is also called a **denoising objective**.<br>
+ 
  ![Screenshot from 2024-03-09 03-11-58](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/833f205c-ed8e-44ce-83b2-fdb451f05b4f)
 
  - Autoencoding models spill bi-directional representations of the input sequence, meaning that the model has an understanding of the full context of a token and not just of the words that come before.
@@ -329,8 +330,10 @@ If instead you set the temperature to a higher value, say, greater than one, the
 
 ### Decoder-only(autoregressive models)
 
-- they are pre-trained using causal language modeling.
-Here, the training objective is to predict the next token based on the previous sequence of tokens. Predicting the next token is sometimes called **full language modeling** by researchers.
+- they are pre-trained using causal language modeling.<br>
+Here, the training objective is to predict the next token based on the previous sequence of tokens. Predicting the next token is sometimes called **full language modeling** by researchers.<br><br>
+![Screenshot from 2024-03-09 03-38-55](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/5dc3e71c-fbf1-4f62-93ba-20b8412e1572)
+
 - Decoder-based autoregressive models, mask the input sequence and can only see the input tokens leading up to the token in question.
 -  The model does not know the end of the sentence. The model then iterates over the input sequence one by one to predict the following token.
 -   In contrast to the encoder architecture, this means that the context is unidirectional.
@@ -342,8 +345,10 @@ Here, the training objective is to predict the next token based on the previous 
 
 ### encoder-decoder models(sequence-to-sequence model)
 - The exact details of the pre-training objective vary from model to model.
-- A popular sequence-to-sequence model T5, pre-trains the encoder using span corruption, which masks random sequences of input tokens.
- Those mass sequences are then replaced with a unique Sentinel token, shown here as x. Sentinel tokens are special tokens added to the vocabulary, but do not correspond to any actual word from the input text.
+- A popular sequence-to-sequence model T5, pre-trains the encoder using span corruption, which masks random sequences of input tokens.<br>
+ Those mass sequences are then replaced with a unique Sentinel token, shown here as x. Sentinel tokens are special tokens added to the vocabulary, but do not correspond to any actual word from the input text.<br><br>
+ ![Screenshot from 2024-03-09 03-40-30](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/7875cfe0-0868-4c52-9adc-a30474302ca6)
+
 - The decoder is then tasked with reconstructing the mask token sequences auto-regressively.
 - The output is the Sentinel token followed by the predicted tokens.
 - You can use sequence-to-sequence models for translation, summarization, and question-answering.
@@ -355,4 +360,7 @@ Here, the training objective is to predict the next token based on the previous 
 >  Autoencoding models are pre-trained using masked language modeling. They correspond to the encoder part of the original transformer architecture and are often used with sentence classification or token classification.
 >  Autoregressive models are pre-trained using causal language modeling. Models of this type make use of the decoder component of the original transformer architecture and are often used for text generation.
 >  Sequence-to-sequence models use both the encoder and decoder part of the original transformer architecture. The exact details of the pre-training objective vary from model to model. The T5 model is pre-trained using span corruption. Sequence-to-sequence models are often used for translation, summarization, and question-answering.
+<br><br>
+![Screenshot from 2024-03-09 03-41-45](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/c44cebd7-0f46-42fb-972c-4a6d29f99333)
+
 **Researchers have found that the larger a model, the more likely it is to work as you needed to without additional in-context learning or further training.**
