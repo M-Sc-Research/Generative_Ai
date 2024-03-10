@@ -422,6 +422,7 @@ FP32: Floating point numbers are stored as a series of bits zeros and ones. The 
 
 ![Screenshot from 2024-03-09 18-53-39](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/6c965a8d-5ea4-440f-bb13-035f192509ee)
 
+> BFLOAT16 uses the full eight bits to represent the exponent but truncates the fraction to just seven bits. This not only saves memory but also increases model performance by speeding up calculations. The downside is that BF16 is not well suited for integer calculations, but these are relatively rare in deep learning.
 
 ## FP32 to BFLOAT16(Brain Floating Point Format)
 
@@ -430,3 +431,8 @@ FP32: Floating point numbers are stored as a series of bits zeros and ones. The 
 ## FP32 into INT8
 
 ![Screenshot from 2024-03-09 18-59-21](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/9a95f163-5ac3-48d2-9e3b-a3518a6fb6e8)
+
+
+
+<br>
+<br>
