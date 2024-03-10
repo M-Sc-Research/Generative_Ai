@@ -399,12 +399,10 @@ is a collection of libraries and tools developed for Nvidia GPUs. Libraries such
 
 ### Reduce the memory required for training
 
-1. Quantization
-
-> Reduce the memory required to store the weights of your model by reducing their precision from 32-bit floating point numbers to 16-bit floating point numbers, or eight-bit integer numbers. 
-
+1. Quantization: is to reduce the memory required to store and train models by reducing the precision of the model weights
 data types used in deep learning framework:
-1.  FP32 for 32-bit full position: The range of numbers you can represent with FP32 goes from approximately -3*10^38 to 3*10^38. By default, model weights, activations, and other model parameters are stored in FP32. 
+
+- FP32 for 32-bit full position: The range of numbers you can represent with FP32 goes from approximately -3*10^38 to 3*10^38. By default, model weights, activations, and other model parameters are stored in FP32. 
 <br>
 <br>
 
@@ -422,7 +420,7 @@ FP32: Floating point numbers are stored as a series of bits zeros and ones. The 
 
 ![Screenshot from 2024-03-09 18-53-39](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/6c965a8d-5ea4-440f-bb13-035f192509ee)
 
-> BFLOAT16 uses the full eight bits to represent the exponent but truncates the fraction to just seven bits. This not only saves memory but also increases model performance by speeding up calculations. The downside is that BF16 is not well suited for integer calculations, but these are relatively rare in deep learning.
+> BFLOAT16 uses the full eight bits to represent the exponent but truncates the fraction to just seven bits. This saves memory and increases model performance by speeding up calculations. The downside is that BF16 is not well suited for integer calculations, which are relatively rare in deep learning.
 
 ## FP32 to BFLOAT16(Brain Floating Point Format)
 
