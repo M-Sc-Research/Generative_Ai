@@ -434,3 +434,6 @@ FP32: Floating point numbers are stored as a series of bits zeros and ones. The 
 
 <br>
 <br>
+
+
+![Screenshot from 2024-03-10 14-29-17](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/0799446d-92d8-4ace-8d1c-0dafa2dc2068)
