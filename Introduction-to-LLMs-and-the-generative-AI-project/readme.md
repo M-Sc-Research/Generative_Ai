@@ -445,3 +445,11 @@ FP32: Floating point numbers are stored as a series of bits zeros and ones. The 
 you'll need to use multi-GPU computing strategies when your model becomes too big to fit in a single GPU. But even if your model does fit onto a single GPU, there are benefits to using multiple GPUs to speed up your training. 
 <br>
 ### 2. how you can carry out this scaling across multiple GPUs in an efficient way?
+<br>
+
+- considering the case where your model still fits on a single GPU
+1. scaling model training to distribute large data sets across multiple GPUs and process these batches of data in parallel
+	- DDP(Distributed Date Parallel): DDP copyists your model onto each GPU and sends batches of data to each of the GPUs in parallel. Each data-set is processed in parallel and then a synchronization step combines the results of each GPU, which in turn updates the model on each GPU, which is always identical across chips.
+	  ![Screenshot from 2024-03-12 02-00-46](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/f7480eb1-39b2-41a8-856c-0bb87c3b51ec)
+
+	
