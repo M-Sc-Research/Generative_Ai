@@ -449,7 +449,32 @@ you'll need to use multi-GPU computing strategies when your model becomes too bi
 
 - considering the case where your model still fits on a single GPU
 1. scaling model training to distribute large data sets across multiple GPUs and process these batches of data in parallel
-	- DDP(Distributed Date Parallel): DDP copyists your model onto each GPU and sends batches of data to each of the GPUs in parallel. Each data-set is processed in parallel and then a synchronization step combines the results of each GPU, which in turn updates the model on each GPU, which is always identical across chips.
+	- DDP(Distributed Date Parallel): DDP copyists your model onto each GPU and sends batches of data to each of the GPUs in parallel. Each data set is processed in parallel and then a synchronization step combines the results of each GPU, which in turn updates the model on each GPU, which is always identical across chips.=>results in faster training
 	  ![Screenshot from 2024-03-12 02-00-46](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/f7480eb1-39b2-41a8-856c-0bb87c3b51ec)
 
-	
+	- model sharding => A popular implementation of modal sharding is Pi Torch is fully sharded data parallel or FSDP for short
+<br>that proposed a technique called **ZeRO**.
+ ZeRO stands for zero redundancy optimizer and the goal of ZeRO is to optimize memory by distributing or sharding model states across GPUs with ZeRO data overlap.
+	  ![Screenshot from 2024-03-12 02-34-41](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/cf8ed4f4-fb6d-4914-9ca6-297c3b3ef80a)
+
+   <br><br>
+   ![Screenshot from 2024-03-12 02-37-08](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/9e6aef17-a3e2-4ea4-8c40-11506e608b37)
+
+- ZeRO Stage 1, shots only optimizer states across GPUs, this can reduce your memory footprint by up to a factor of four.
+-  ZeRO Stage 2 also shots the gradients across chips. When applied together with Stage 1, this can reduce your memory footprint by up to eight times.
+-  ZeRO Stage 3 shots all components including the model parameters across GPUs.
+ **When applied together with Stages 1 and 2, memory reduction is linear with a number of GPUs.**
+   <br>
+    For example, sharding across 64 GPUs could reduce your memory by a factor of 64.
+   <br>
+![Screenshot from 2024-03-12 02-43-32](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/a502787e-5fb4-4599-a009-4fcdc0be82cc)
+
+   In contrast to GDP, where each GPU has all of the model states required for processing each batch of data available locally, FSDP requires you to collect this data from all of the GPUs before the forward and backward pass. Each CPU requests data from the other GPUs on-demand to materialize the sharded data into uncharted data for the duration of the operation. After the operation, you release the uncharted non-local data back to the other GPUs as original sharded data You can also choose to keep it for future operations during backward pass for example. Note, that this requires more GPU RAM again, this is a typical performance versus memory trade-off decision.the final step after the backward pass, FSDP synchronizes the gradients across the GPUs in the same way they were for DDP
+
+
+   <br><br>
+
+   ![Screenshot from 2024-03-12 02-46-32](https://github.com/M-Sc-Research/Generative_Ai/assets/96652895/75330e05-f299-4728-a386-b81682161fc0)
+
+   ## data parallelism in the context of training Large Language Models (LLMs) with GPUs
+   Data parallelism is a strategy that splits the training data across multiple GPUs. Each GPU processes a different subset of the data simultaneously, which can greatly speed up the overall training time.
