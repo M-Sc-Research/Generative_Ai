@@ -1,0 +1,2 @@
+
+In large language models (LLMs), data parallelism and model parallelism are often used together to train the model efficiently. Data parallelism involves splitting the training data across multiple devices and updating the model parameters in parallel, while model parallelism involves splitting the model itself across multiple devices and performing computations in parallel. By combining these two parallelization techniques, it is possible to scale training to very large models and datasets.
