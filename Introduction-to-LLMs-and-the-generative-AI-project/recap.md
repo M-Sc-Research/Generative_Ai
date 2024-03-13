@@ -6,4 +6,5 @@
 - Dataset size: Number of tokens
 - Batch size: Number of samples per iteration
 - Compute budget: Compute constraints
+  <br>
  to maximize the performance of a model within a set of constraints and available scaling choices.
