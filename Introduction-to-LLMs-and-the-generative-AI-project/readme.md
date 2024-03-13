@@ -537,3 +537,4 @@ If your target domain uses vocabulary and language structures that are not commo
   1. models are trained on vast amounts of text data during an initial training phase called pretraining.
   2. This is where models develop their understanding of language.
   3. In practice because of GPU memory limitations, you will almost always use some form of quantization when training your models. 
+  4. Petaflops per second-day is a useful measure for computing budget as it reflects the both hardware and time required to train the model.
